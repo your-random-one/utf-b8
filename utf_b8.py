@@ -20,6 +20,5 @@ def encode_utf_b8(string) -> bytes:
 			codepoint -= 0x10000
 			high=0xD800+(codepoint>>10)
 			low=0xDC00+(codepoint&0x3FF)
-			print(hex(low))
 			r+=chr(high).encode('utf-8','surrogatepass')+chr(low).encode('utf-8','surrogatepass')
 	return r
