@@ -8,6 +8,4 @@ For example, U+10000 is encoded as F0 90 80 80 in normal UTF-8, but with my enco
 
 **Do not ask.**
 
-So, I made a library for my encoding that can currently validate and encode to UTF-B8.
-
-Please feel free to do anything you need to with this library.
+So, I made a library for my encoding that can currently validate (surrogate validation is WIP) and encode to UTF-B8.
