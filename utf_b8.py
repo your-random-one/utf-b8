@@ -10,7 +10,7 @@ def valid_utf_b8(bytes):
 			return False
 		else:
 			return True
-def encode_utf_b8(int codepoint) -> bytes:
+def encode_utf_b8(codepoint: int) -> bytes:
 	if codepoint <= 0xFFFF:
 		return chr(codepoint).encode('utf-8')
 	else:
